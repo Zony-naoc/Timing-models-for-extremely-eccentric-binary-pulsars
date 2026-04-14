@@ -304,8 +304,12 @@ longdouble DDEGR1model(pulsar *psr,int p,int ipos,int param) //DDEGR+ model
     czeta1=dx2dzeta1*cx+dw2dzeta1*comega;
     czeta2=dx2dzeta2*cx+dw2dzeta2*comega;
     czeta3=dx2dzeta3*cx+dw2dzeta3*comega+de2dzeta3*ce;
+    
+    if (psr[p].param[param_sini].paramSet[0]==1&&psr[p].param[param_m2].paramSet[0]==0){
+        cSINI=-cm2*m2/si;
+        cm=cm+2.0/3*m2/m*cm2;
+    }
 
-    cSINI=-cm2*m2/si;
     
 
     if (param==-2)  /* Set derived parameters */
