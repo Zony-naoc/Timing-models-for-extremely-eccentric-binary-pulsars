@@ -8,7 +8,7 @@ The new models have these key features:
 
 # usage
 1. In DDe/DDe+ model, if XOMODT parameter is included, the timing model will fit for both the relativistic periastron advance rate (XOMDOT) and the total periastron advance rate (OMDOT). Otherwise, the model assumes that the periastron advance is fully relativistic the same as the DD model.
-2. In DDeGR+ model, the timing model will always fit for both the total mass (which corresponds to the relativistic periastron advance rate) and the total periastron advance rate (XOMDOT). Besides that, sini can be used in this model to replace mc (optional).
+2. In DDeGR+ model, the timing model can fit for both the total mass (which corresponds to the relativistic periastron advance rate) and the total periastron advance rate (XOMDOT). Besides that, sini can be used in this model to replace mc (optional).
 
 
 
