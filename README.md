@@ -7,7 +7,7 @@ The new models have these key features:
 2. For exteremly eccentric binary pulsars, their periastron advance rates have lage variations in one orbital period. Fitting for such variations and the long-term changes of om allow the independent measurement of the relativistic periastron advance rate and the total periastron advance rate, providing constraints on the non-relativistic contributions on the periastron advance.
 
 # model install
-To use these models, please modify tempo2.h, t2fit_stdFitFuncs.C, formResiduals.C, initialise.C and readParfile.C to include the new parameters and new functions. Also edit the Makefile file so the new model files can be compiled.
+To use these models, please modify tempo2.h, t2fit_stdFitFuncs.C, formResiduals.C, initialise.C and readParfile.C to include the new parameters and new functions (see those in the ./file_to_replace/). Also edit the Makefile file so the new model files can be compiled.
 
 # usage
 1. In DDe/DDe+ model, if XOMODT parameter is included, the timing model will fit for both the relativistic periastron advance rate (XOMDOT) and the total periastron advance rate (OMDOT). Otherwise, the model assumes that the periastron advance is fully relativistic the same as the DD model.
